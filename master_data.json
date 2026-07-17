@@ -1,34 +1,57 @@
 {
   "system_config": {
     "version": "1.0.0",
-    "last_updated": "2026-07-17",
     "currency": "USD"
   },
   "items": [
     {
-      "item_id": "L_LED_STRIP",
-      "name": "Dây LED 50W (mét)",
-      "unit": "mét",
-      "unit_price": 15.00
+      "item_id": "L_01",
+      "name": "Ghế xếp (Form L)",
+      "unit": "cái",
+      "unit_price": 10.00,
+      "vat_rate": 8
     },
     {
-      "item_id": "L_LED_CONNECTOR",
+      "item_id": "L_02",
+      "name": "Bàn thông tin (Form L)",
+      "unit": "cái",
+      "unit_price": 50.00,
+      "vat_rate": 8
+    },
+    {
+      "item_id": "M_01",
+      "name": "Đèn huỳnh quang 40W (Form M)",
+      "unit": "bóng",
+      "unit_price": 35.00,
+      "vat_rate": 8
+    },
+    {
+      "item_id": "P_01",
+      "name": "Đăng ký thư mời Visa (Form P)",
+      "unit": "người",
+      "unit_price": 30.00,
+      "vat_rate": 5
+    },
+    {
+      "item_id": "LED_STRIP",
+      "name": "Dây LED chiếu sáng",
+      "unit": "mét",
+      "unit_price": 15.00,
+      "vat_rate": 8
+    },
+    {
+      "item_id": "LED_CONNECTOR",
       "name": "Đầu nối dây LED",
       "unit": "cái",
-      "unit_price": 2.00
-    },
-    {
-      "item_id": "M_INFO_DESK",
-      "name": "Bàn thông tin (1x0.5x0.75m)",
-      "unit": "cái",
-      "unit_price": 50.00
+      "unit_price": 2.00,
+      "vat_rate": 8
     }
   ],
   "auto_calculation_engine": [
     {
-      "trigger_item": "L_LED_STRIP",
+      "trigger_item": "LED_STRIP",
       "formula": "Math.ceil(quantity_input / 3)",
-      "target_item": "L_LED_CONNECTOR"
+      "target_item": "LED_CONNECTOR"
     }
   ]
 }
