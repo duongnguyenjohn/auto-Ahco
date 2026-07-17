@@ -1,0 +1,34 @@
+{
+  "system_config": {
+    "version": "1.0.0",
+    "last_updated": "2026-07-17",
+    "currency": "USD"
+  },
+  "items": [
+    {
+      "item_id": "L_LED_STRIP",
+      "name": "Dây LED 50W (mét)",
+      "unit": "mét",
+      "unit_price": 15.00
+    },
+    {
+      "item_id": "L_LED_CONNECTOR",
+      "name": "Đầu nối dây LED",
+      "unit": "cái",
+      "unit_price": 2.00
+    },
+    {
+      "item_id": "M_INFO_DESK",
+      "name": "Bàn thông tin (1x0.5x0.75m)",
+      "unit": "cái",
+      "unit_price": 50.00
+    }
+  ],
+  "auto_calculation_engine": [
+    {
+      "trigger_item": "L_LED_STRIP",
+      "formula": "Math.ceil(quantity_input / 3)",
+      "target_item": "L_LED_CONNECTOR"
+    }
+  ]
+}
